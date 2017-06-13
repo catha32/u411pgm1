@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>slitunittranslation</class>
+ <widget class="QWidget" name="slitunittranslation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>495</width>
+    <height>637</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>450</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QCALed" name="LedV1_5" native="true">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>107</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_getn.B.</string>
+   </property>
+  </widget>
+  <widget class="QCALed" name="LedV1_8" native="true">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>227</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_getn.E.</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>147</y>
+     <width>168</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <widget class="QCAPushButton" name="pushButton_18">
+      <property name="text">
+       <string>Goto</string>
+      </property>
+      <property name="pv" stdset="0">
+       <string>u411pgm1:PH_2_GON</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCAPushButton" name="pushButton_19">
+      <property name="text">
+       <string>Save as</string>
+      </property>
+      <property name="pv" stdset="0">
+       <string>u411pgm1:PH_2_SAVEN</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_16">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>267</y>
+     <width>171</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save all as startup</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_AKTION</string>
+   </property>
+  </widget>
+  <widget class="QCALed" name="LedV1_7" native="true">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>147</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_getn.C.</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_27">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>567</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>STOP</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_AKTION</string>
+   </property>
+  </widget>
+  <widget class="QCALabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>17</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:MonoName</string>
+   </property>
+  </widget>
+  <widget class="QCALabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>37</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_Name</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_6">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>187</y>
+     <width>168</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_7">
+    <item>
+     <widget class="QCAPushButton" name="pushButton_29">
+      <property name="text">
+       <string>Goto</string>
+      </property>
+      <property name="pv" stdset="0">
+       <string>u411pgm1:PH_2_GON</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCAPushButton" name="pushButton_30">
+      <property name="text">
+       <string>Save as</string>
+      </property>
+      <property name="pv" stdset="0">
+       <string>u411pgm1:PH_2_SAVEN</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_26">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>357</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Out</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_0_DOSTEP</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_17">
+   <property name="geometry">
+    <rect>
+     <x>218</x>
+     <y>110</y>
+     <width>80</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save as</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_SAVEN</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_20">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>357</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>In</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_DOSTEP</string>
+   </property>
+  </widget>
+  <widget class="QCALed" name="LedV1_6" native="true">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>187</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_getn.D.</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_28">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>567</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>DoRef</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_AKTION</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_24">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>397</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Out</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_AKTION</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_5">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>227</y>
+     <width>168</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_6">
+    <item>
+     <widget class="QCAPushButton" name="pushButton_22">
+      <property name="text">
+       <string>Goto</string>
+      </property>
+      <property name="pv" stdset="0">
+       <string>u411pgm1:PH_2_GON</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCAPushButton" name="pushButton_23">
+      <property name="text">
+       <string>Save as</string>
+      </property>
+      <property name="pv" stdset="0">
+       <string>u411pgm1:PH_2_SAVEN</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QCALabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>157</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>close</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_GETN.TWST</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_25">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>110</y>
+     <width>80</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Goto</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_GON</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>547</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Pinhole</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QCALabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>547</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Hard (H)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_REF_STAT</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_21">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>397</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>In</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_AKTION</string>
+   </property>
+  </widget>
+  <widget class="QCALabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>open</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_GETN.ONST</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="step2saxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>390</y>
+     <width>350</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>Rel.Steps</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:PH_0_SETSTEP</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>um</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_0_STEP</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="speed2axis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>360</y>
+     <width>350</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>jogSpeed</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:PH_0_SETJOGSPEED</string>
+   </property>
+   <property name="units" stdset="0">
+    <string comment="mm/s">um</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_0_JOGSPEED</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="po2saxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>460</y>
+     <width>350</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>setpos</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:PH_0_Load</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>mm/s</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_0_Load</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="goto2axis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>310</y>
+     <width>350</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>Goto</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:PH_0_SET</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>um</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_0_GET</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCALabel</class>
+   <extends>QLabel</extends>
+   <header>qcalabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCALed</class>
+   <extends>QWidget</extends>
+   <header>qcaled.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCAAxis</class>
+   <extends>QWidget</extends>
+   <header>qcaaxis.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCAPushButton</class>
+   <extends>QPushButton</extends>
+   <header>qcapushbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>slitunit_test</class>
+ <widget class="QWidget" name="slitunit_test">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>902</width>
+    <height>819</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QCALCDNumber" name="lcdNumber_6">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>60</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_0_GET</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>JogSpeed(mm/s)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_8">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>100</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_7">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>180</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_20">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>100</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>In</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_0_DOSTEP</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_24">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>140</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Out</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_0_AKTION</string>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber_5">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>100</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_0_STEP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Rel.Steps(um)</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_26">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>100</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Out</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_0_DOSTEP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Goto(um)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_5">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>140</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>190</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Set Pos(um)</string>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber_4">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>140</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_0_JOGSPEED</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_21">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>140</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>In</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_0_AKTION</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_6">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>60</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCALabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>20</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_0_Name</string>
+   </property>
+  </widget>
+  <widget class="QCALabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>20</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_1_Name</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>100</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_10">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>100</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>In</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_1_DOSTEP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>150</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>JogSpeed(mm/s)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>180</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>140</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>70</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Goto(um)</string>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>60</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_1_GET</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_11">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>100</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Out</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_1_DOSTEP</string>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber_2">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>100</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_1_STEP</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>60</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber_3">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>140</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_1_JOGSPEED</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_13">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>140</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Out</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_1_AKTION</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_12">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>140</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>In</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_1_AKTION</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>110</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Rel.Steps(um)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>190</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Set Pos(um)</string>
+   </property>
+  </widget>
+  <widget class="QCALabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>270</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_Name</string>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber_7">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>350</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_STEP</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_9">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>350</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber_8">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>390</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_JOGSPEED</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_14">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>390</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>In</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_AKTION</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_10">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>390</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>320</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Goto(um)</string>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber_9">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>310</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_GET</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_11">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>310</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_15">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>390</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Out</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_AKTION</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_12">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>430</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>360</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Rel.Steps(um)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>400</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>JogSpeed(mm/s)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>440</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Set Pos(um)</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_16">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>350</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>In</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_DOSTEP</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_17">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>350</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Out</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:PH_2_DOSTEP</string>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber_10">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>510</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_exitarm</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>360</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Bandwidth slit (meV)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_13">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>510</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber_11">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>560</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_Slit2Ph</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>310</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Slitwidth(um)</string>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber_12">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>410</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_ResPow</string>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber_13">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>450</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:DE_0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>510</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exitarm(m)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>460</y>
+     <width>41</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>?</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_14">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>310</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>610</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SlitDistance(m)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_15">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>410</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>460</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Total Bandw.(meV)</string>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber_14">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>310</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_SW</string>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber_15">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>610</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_SlitDist</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_22">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>560</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Slit to Ph(m)</string>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber_16">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>360</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_BW</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_16">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>360</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_23">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>410</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Monochromaticity</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_17">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>560</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCALabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>270</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:Branch_0_Name</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCALCDNumber</class>
+   <extends>QLCDNumber</extends>
+   <header>qcalcdnumber.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCALabel</class>
+   <extends>QLabel</extends>
+   <header>qcalabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCAPushButton</class>
+   <extends>QPushButton</extends>
+   <header>qcapushbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

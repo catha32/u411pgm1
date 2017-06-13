@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>undulator</class>
+ <widget class="QWidget" name="undulator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>770</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>8</y>
+     <width>283</width>
+     <height>116</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="title">
+    <string>Undulator</string>
+   </property>
+   <layout class="QGridLayout" name="_3">
+    <property name="leftMargin">
+     <number>3</number>
+    </property>
+    <property name="topMargin">
+     <number>3</number>
+    </property>
+    <property name="rightMargin">
+     <number>3</number>
+    </property>
+    <property name="bottomMargin">
+     <number>3</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Energy</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <spacer>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="2">
+     <widget class="QCALCDNumber" name="LCDNumber">
+      <property name="pv" stdset="0">
+       <string>u411pgm1:monoGetEnergy</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>eV</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Gap</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <spacer>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="2">
+     <widget class="QCALCDNumber" name="LCDNumber_2">
+      <property name="digitCount">
+       <number>7</number>
+      </property>
+      <property name="pv" stdset="0">
+       <string>U41IT3R:BasePmGap.A</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>mm</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>250</y>
+     <width>283</width>
+     <height>523</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="title">
+    <string>Vacuum</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_11">
+        <property name="minimumSize">
+         <size>
+          <width>22</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>V1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALed" name="LedV1" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pv" stdset="0">
+         <string>V01V01U006L:Opened</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALCDNumber" name="QCALCDNumberX">
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="pv" stdset="0">
+         <string>GPNT01V01U006L:Pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>mbar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_38">
+        <property name="minimumSize">
+         <size>
+          <width>22</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>V1-2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALed" name="LedV1_2" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pv" stdset="0">
+         <string>V02V01U006L:Opened</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALCDNumber" name="QCALCDNumber_12">
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="pv" stdset="0">
+         <string>GPNT01-02V01U006L:Pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_37">
+        <property name="text">
+         <string>mbar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_12">
+        <property name="minimumSize">
+         <size>
+          <width>22</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>V2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALed" name="LedV2" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pv" stdset="0">
+         <string>V02V01U006L:Opened</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALCDNumber" name="QCALCDNumber_2">
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="pv" stdset="0">
+         <string>GPNT02V01U006L:Pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>mbar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_24">
+        <property name="text">
+         <string>BS</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALed" name="LedV12_3" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pv" stdset="0">
+         <string>BSR01U006L:Opened</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALCDNumber" name="QCALCDNumber_11">
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="pv" stdset="0">
+         <string>MR02V01U006L:Pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_36">
+        <property name="text">
+         <string>mbar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_13">
+        <property name="minimumSize">
+         <size>
+          <width>22</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>V3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALed" name="LedV3" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pv" stdset="0">
+         <string>V03V01U006L:Opened</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALCDNumber" name="QCALCDNumber_3">
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="pv" stdset="0">
+         <string>GPNT03V01U106L:Pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>mbar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="label_17">
+        <property name="minimumSize">
+         <size>
+          <width>22</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>V4</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALed" name="LedV4" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pv" stdset="0">
+         <string>V04V01U106L:Opened</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALCDNumber" name="QCALCDNumber_4">
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="pv" stdset="0">
+         <string>GPNT04V01U106L:Pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_23">
+        <property name="text">
+         <string>mbar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QLabel" name="label_18">
+        <property name="minimumSize">
+         <size>
+          <width>22</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>V5</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALed" name="LedV5" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pv" stdset="0">
+         <string>V05V01U106L:Opened</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALCDNumber" name="QCALCDNumber_5">
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="pv" stdset="0">
+         <string>GPNT05V01U106L:Pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_25">
+        <property name="text">
+         <string>mbar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <widget class="QLabel" name="label_19">
+        <property name="minimumSize">
+         <size>
+          <width>22</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>V6</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALed" name="LedV6" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pv" stdset="0">
+         <string>V06V01U106L:Opened</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALCDNumber" name="QCALCDNumber_6">
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="pv" stdset="0">
+         <string>GPNT06V01U106L:Pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_26">
+        <property name="text">
+         <string>mbar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_9">
+      <item>
+       <widget class="QLabel" name="label_20">
+        <property name="minimumSize">
+         <size>
+          <width>22</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>V7</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALed" name="LedV7" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pv" stdset="0">
+         <string>V07V01U306L:Opened</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALCDNumber" name="QCALCDNumber_7">
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="pv" stdset="0">
+         <string>GPNT07V01U306L:Pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_27">
+        <property name="text">
+         <string>mbar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_10">
+      <item>
+       <widget class="QLabel" name="label_21">
+        <property name="minimumSize">
+         <size>
+          <width>22</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>V8</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALed" name="LedV8" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pv" stdset="0">
+         <string>V08V01U306L:Opened</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALCDNumber" name="QCALCDNumber_8">
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="pv" stdset="0">
+         <string>GPNT08V01U306L:Pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_28">
+        <property name="text">
+         <string>mbar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_18">
+      <item>
+       <widget class="QLabel" name="label_40">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>V9</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Minimum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>37</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QCALCDNumber" name="QCALCDNumber_13">
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="pv" stdset="0">
+         <string>MR09V01U306L:Pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_41">
+        <property name="text">
+         <string>mbar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_14">
+      <item>
+       <widget class="QLabel" name="label_32">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>V10</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALed" name="LedV11_5" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pv" stdset="0">
+         <string>V10V01U306L:Opened</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALCDNumber" name="QCALCDNumber_17">
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="pv" stdset="0">
+         <string>GPNT10V01U306L:Pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_35">
+        <property name="text">
+         <string>mbar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_13">
+      <item>
+       <widget class="QLabel" name="label_31">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>V11</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALed" name="LedV11" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pv" stdset="0">
+         <string>V11V01U306L:Opened</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALCDNumber" name="QCALCDNumber_10">
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="pv" stdset="0">
+         <string>MR11-01V01U306L:Pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_34">
+        <property name="text">
+         <string>mbar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_19">
+      <item>
+       <widget class="QLabel" name="label_42">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>V12</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALed" name="LedV11_2" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pv" stdset="0">
+         <string>V12V01U306L:Opened</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALCDNumber" name="QCALCDNumber_14">
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="pv" stdset="0">
+         <string>MR12V01U306L:Pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_43">
+        <property name="text">
+         <string>mbar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_20">
+      <item>
+       <widget class="QLabel" name="label_44">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>V13</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALed" name="LedV11_3" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="pv" stdset="0">
+         <string>V13V01U306L:Opened</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCALCDNumber" name="QCALCDNumber_15">
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="pv" stdset="0">
+         <string>MR13V01U306L:Pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_45">
+        <property name="text">
+         <string>mbar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_21"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>283</width>
+     <height>122</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="title">
+    <string>Monochromator</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="leftMargin">
+     <number>3</number>
+    </property>
+    <property name="topMargin">
+     <number>3</number>
+    </property>
+    <property name="rightMargin">
+     <number>3</number>
+    </property>
+    <property name="bottomMargin">
+     <number>3</number>
+    </property>
+    <item>
+     <widget class="QCAAxis" name="energyAxis" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>10</height>
+       </size>
+      </property>
+      <property name="description" stdset="0">
+       <string>Energy</string>
+      </property>
+      <property name="pvReadback" stdset="0">
+       <string>u411pgm1:monoGetEnergy</string>
+      </property>
+      <property name="units" stdset="0">
+       <string>eV</string>
+      </property>
+      <property name="pv" stdset="0">
+       <string>u411pgm1:monoSetEnergy</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCAAxis" name="slitAxis" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>10</height>
+       </size>
+      </property>
+      <property name="description" stdset="0">
+       <string>Ext Slit</string>
+      </property>
+      <property name="pvReadback" stdset="0">
+       <string>u411pgm1:ES_0_SW</string>
+      </property>
+      <property name="units" stdset="0">
+       <string>µm</string>
+      </property>
+      <property name="pv" stdset="0">
+       <string>u411pgm1:ES_0_SetSW</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCAAxis" name="cffAxis" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>10</height>
+       </size>
+      </property>
+      <property name="description" stdset="0">
+       <string>CFF Value</string>
+      </property>
+      <property name="pvReadback" stdset="0">
+       <string>u411pgm1:cff</string>
+      </property>
+      <property name="units" stdset="0">
+       <string/>
+      </property>
+      <property name="pv" stdset="0">
+       <string>u411pgm1:SetCff</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCALCDNumber</class>
+   <extends>QLCDNumber</extends>
+   <header>qcalcdnumber.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCALed</class>
+   <extends>QWidget</extends>
+   <header>qcaled.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCAAxis</class>
+   <extends>QWidget</extends>
+   <header>qcaaxis.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

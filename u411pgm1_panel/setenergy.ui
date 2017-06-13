@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>setenergy</class>
+ <widget class="QDialog" name="setenergy">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1244</width>
+    <height>783</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>60</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Select</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>130</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Active:</string>
+   </property>
+  </widget>
+  <widget class="QCALabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>150</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:Branch</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_7">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>20</y>
+     <width>151</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QCAComboBox" name="ComboBox_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="pv" stdset="0">
+     <string>u411pgm1:SetBranch</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>TXM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PEAXIS</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QCAAxis" name="energyAxis_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>310</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>Energy PEAXIS</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:SetEnergyC</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>eV</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetEnergyC</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="energyAxis_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>270</y>
+     <width>310</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>SlitWidth</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:SetSlitWidth</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>um</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetSlitWidth</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="energyAxis_4" native="true">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>60</y>
+     <width>310</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>Mono</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:monoGetEnergy</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>eV</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:monoGetEnergy</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="energyAxis_5" native="true">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>270</y>
+     <width>310</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>Slitwidth TXM</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:ES_0_SetSW</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>um</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_SetSW</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="energyAxis_6" native="true">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>350</y>
+     <width>310</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>Slitwidth PEAXIS</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:ES_1_SetSW</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>um</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_1_SetSW</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="energyAxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>310</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>Energy TXM</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:SetEnergyA</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>eV</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetEnergyA</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCALabel</class>
+   <extends>QLabel</extends>
+   <header>qcalabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCAAxis</class>
+   <extends>QWidget</extends>
+   <header>qcaaxis.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCAComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qcacombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>slitwidthvertical</class>
+ <widget class="QWidget" name="slitwidthvertical">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>481</width>
+    <height>701</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>360</y>
+     <width>41</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>?</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>510</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SlitDistance(m)</string>
+   </property>
+  </widget>
+  <widget class="QCALabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>550</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Hard (H)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_REF_STAT</string>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber_7">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>510</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_SlitDist</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>360</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Total Bandw.(meV)</string>
+   </property>
+  </widget>
+  <widget class="QCALCDNumber" name="lcdNumber_4">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>350</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:DE_0</string>
+   </property>
+  </widget>
+  <widget class="QCAComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_Distrib</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Set_Slit(um)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Set_SlitBW(meV)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SetSlitResPow</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>52</x>
+     <y>571</y>
+     <width>340</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QCAPushButton" name="pushButton_14">
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string>DoRef</string>
+      </property>
+      <property name="pv" stdset="0">
+       <string>u411pgm1:ES_0_AKTION</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCAPushButton" name="pushButton">
+      <property name="text">
+       <string>Plateau</string>
+      </property>
+      <property name="pv" stdset="0">
+       <string>u411pgm1:ES_0_AKTION</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCAPushButton" name="pushButton_15">
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>STOP</string>
+      </property>
+      <property name="pv" stdset="0">
+       <string>u411pgm1:ES_0_AKTION</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCAPushButton" name="pushButton_2">
+      <property name="text">
+       <string>Close</string>
+      </property>
+      <property name="pv" stdset="0">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QCALabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>20</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:MonoName</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>120</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCALabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>50</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:Branch_0_Name</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="slitwidthaxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>210</y>
+     <width>350</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>Slitwidth</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:ES_0_SW</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>um</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_Input</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="bandwidthaxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>260</y>
+     <width>350</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>Bandwidth slit</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:ES_0_BW</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>meV</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_SetBW</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="monoaxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>310</y>
+     <width>350</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>Monochromaticity</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:ES_0_ResPow</string>
+   </property>
+   <property name="units" stdset="0">
+    <string/>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_SetRP</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="exitarmaxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>400</y>
+     <width>350</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>Exitarm</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:ES_0_exitarm</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>m</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_SetExit</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="slitaxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>450</y>
+     <width>350</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>Slit to Ph</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:ES_0_Slit2Ph</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>m</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_SetSlit2Ph</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="Axis_5" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>650</y>
+     <width>449</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="description" stdset="0">
+    <string>Speed</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:ES_0_JOGSPEED</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>mm/s</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_SETJOGSPEED</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>610</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Low Level Motor</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCALCDNumber</class>
+   <extends>QLCDNumber</extends>
+   <header>qcalcdnumber.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCALabel</class>
+   <extends>QLabel</extends>
+   <header>qcalabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCAAxis</class>
+   <extends>QWidget</extends>
+   <header>qcaaxis.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCAComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qcacombobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCAPushButton</class>
+   <extends>QPushButton</extends>
+   <header>qcapushbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

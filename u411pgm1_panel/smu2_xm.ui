@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>smu2_xm</class>
+ <widget class="QDialog" name="smu2_xm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1221</width>
+    <height>567</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>10</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SMU41_2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>10</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>XM</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>100</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>STOP</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>SMU41_2:StopM1</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="m1Axis_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>90</y>
+     <width>420</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="description" stdset="0">
+    <string/>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>SMU41_2:rdRelM1</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>steps</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>SMU41_2:RelM1</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="m9Axis_1" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>410</y>
+     <width>420</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="description" stdset="0">
+    <string>M9 Left Rz</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>SMU41_2:rdPosM9</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>steps</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>SMU41_2:AbsM9</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_10">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>410</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>details</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="m9Axis_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>410</y>
+     <width>420</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="description" stdset="0">
+    <string/>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>SMU41_2:rdRelM9</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>steps</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>SMU41_2:RelM9</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_9">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>330</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>STOP</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>SMU41_2:StopM8</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="m8Axis_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>320</y>
+     <width>420</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="description" stdset="0">
+    <string/>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>SMU41_2:rdRelM8</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>steps</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>SMU41_2:RelM8</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="m6Axis_1" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>420</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="description" stdset="0">
+    <string>M6 Left Rz</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>SMU41_2:rdPosM6</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>steps</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>SMU41_2:AbsM6</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_24">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>60</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>relative</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>90</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>details</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="m6Axis_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>160</y>
+     <width>420</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="description" stdset="0">
+    <string/>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>SMU41_2:rdRelM6</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>steps</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>SMU41_2:RelM6</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_11">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>420</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>STOP</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>SMU41_2:StopM9</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_12">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>480</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>more</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Motor</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>320</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>details</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>250</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>details</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>60</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>absolute</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="m1Axis_1" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>420</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="description" stdset="0">
+    <string>M1 Switch</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>SMU41_2:rdPosM1</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>steps</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>SMU41_2:AbsM1</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="m7Axis_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>240</y>
+     <width>420</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="description" stdset="0">
+    <string/>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>SMU41_2:rdRelM7</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>steps</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>SMU41_2:RelM7</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>250</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>STOP</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>SMU41_2:StopM7</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>60</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Position</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="m7Axis_1" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>240</y>
+     <width>420</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="description" stdset="0">
+    <string>M7 Left Rz</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>SMU41_2:rdPosM7</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>steps</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>SMU41_2:AbsM7</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>170</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>STOP</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>SMU41_2:StopM6</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="m8Axis_1" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>320</y>
+     <width>420</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="description" stdset="0">
+    <string>M8 Left Rz</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>SMU41_2:rdPosM8</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>steps</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>SMU41_2:AbsM8</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>160</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>details</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>20</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>Stop All</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>SMU41_2:Stop</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCAPushButton</class>
+   <extends>QPushButton</extends>
+   <header>qcapushbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCAAxis</class>
+   <extends>QWidget</extends>
+   <header>qcaaxis.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

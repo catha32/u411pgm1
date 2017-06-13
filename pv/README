@@ -1,0 +1,17 @@
+libpv
+=====
+
+This is basically the stolen guts of edm's channel access process variable
+implementation. I only had to comment out two references to edmDebug symbol
+and make sure to be thread safe during inititalisation and when retrieving
+the host (IOC) name.
+
+Would be nice to share this code between future versions of edm and QCA, i.e.
+to keep the interface clean ;-) Maybe the containers (Hash, ...) should be
+done with STL (and/or Qt)?.
+
+Edm's CALC pvs don't work reliably with QCA atm. And I have no idea what an
+edm LOC pv is meant to be.
+
+Would be nice to provide an API to create mighty "soft channels", e.g. sums
+of linearely transformed EPICS channels and the like.

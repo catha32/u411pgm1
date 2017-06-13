@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>settings</class>
+ <widget class="QDialog" name="settings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>535</width>
+    <height>212</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QCALabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>10</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:MonoName</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>grating</string>
+   </property>
+  </widget>
+  <widget class="QCAComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetGratingNo</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>800.0 1/mm</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1200.0 1/mm</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>40</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MonoMode</string>
+   </property>
+  </widget>
+  <widget class="QCAComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>60</y>
+     <width>72</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetFormulaMode</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Normal</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Fix Cff</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vary Cff</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>On Blaze</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Fix Beta</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mirror Only</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Fix Theta</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Grating Only</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Table</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Zero0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>U41SGM</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>U1252SGM1</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QCAComboBox" name="comboBox_3">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>60</y>
+     <width>72</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SelIdHarmonic</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>max</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>auto</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>7</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>40</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Harmonic</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>90</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PolConfig</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>120</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SlopeOffset</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>160</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Select</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>180</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ID-table</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>160</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>!</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="cffAxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>285</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>CFF Value</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:cff</string>
+   </property>
+   <property name="units" stdset="0">
+    <string/>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetCff</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="diffAxis_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>285</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>Diffr. Order</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:Order</string>
+   </property>
+   <property name="units" stdset="0">
+    <string/>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetOrder</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="holdAxis_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>160</y>
+     <width>285</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>Hold Position Intervall</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:PositionTimer</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>s</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetPositionTimer</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCALabel</class>
+   <extends>QLabel</extends>
+   <header>qcalabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCAAxis</class>
+   <extends>QWidget</extends>
+   <header>qcaaxis.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCAComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qcacombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

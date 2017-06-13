@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IdExpert</class>
+ <widget class="QWidget" name="IdExpert">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>839</width>
+    <height>425</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ID-control</string>
+   </property>
+  </widget>
+  <widget class="QCAComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:IdDependSMU</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Check SMU</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ignore SMU</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>50</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Correction</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>30</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Angel</string>
+   </property>
+  </widget>
+  <widget class="QCAComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>70</y>
+     <width>72</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:set_ikHeydemann</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>On</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Off</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>30</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Collision</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>50</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Control</string>
+   </property>
+  </widget>
+  <widget class="QCAComboBox" name="comboBox_3">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>70</y>
+     <width>72</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:MbboCheckBMT</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>On</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Off</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QCAComboBox" name="comboBox_4">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>70</y>
+     <width>72</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetAmcMode</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Normal</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Grating</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mirror</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Energy</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Exit Slit</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pinhole</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Direct ID</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Choppper</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cff</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Aperture</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SMU</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>CA-Motor</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Motor</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>50</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AmcMode</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>30</y>
+     <width>59</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Direct</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>50</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ID mode</string>
+   </property>
+  </widget>
+  <widget class="QCAComboBox" name="comboBox_5">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>70</y>
+     <width>72</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:AmcSetMode</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>null</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SPO = energy</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SPO = lamda</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SPO = gab</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>390</y>
+     <width>111</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Calculate</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>290</y>
+     <width>181</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Set Offset to all branches</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:Mono_Aktion</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>290</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BZ_KNOB</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:Mono_Aktion.PROC</string>
+   </property>
+  </widget>
+  <widget class="QCAPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>390</y>
+     <width>141</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save as Startup</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:Mono_Aktion.PROC</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="blazeAxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>280</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>blaze angle</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:blazeAngle</string>
+   </property>
+   <property name="units" stdset="0">
+    <string/>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetblazeAngle</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="cAxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>160</y>
+     <width>280</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>cDriveEnergy</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:cDriveEnergy</string>
+   </property>
+   <property name="units" stdset="0">
+    <string/>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetcDriveEnergy</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="fixAxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>280</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>fixbeta</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:FixBetaAngle</string>
+   </property>
+   <property name="units" stdset="0">
+    <string/>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetFixBetaAngle</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="fixtAxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>280</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>fixtheta</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:FixThetaAngle</string>
+   </property>
+   <property name="units" stdset="0">
+    <string/>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetFixThetaAngle</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="idsAxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>280</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>IdSlope</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:aiIdSlope</string>
+   </property>
+   <property name="units" stdset="0">
+    <string/>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetaiIdSlope</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="idoAxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>330</y>
+     <width>280</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>IdOffset</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:aiIdOffset</string>
+   </property>
+   <property name="units" stdset="0">
+    <string/>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetaiIdOffset</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="amcAxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>120</y>
+     <width>280</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>AmcFactor</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:AmcFactor</string>
+   </property>
+   <property name="units" stdset="0">
+    <string/>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetAmcFactor</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="amc2Axis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>160</y>
+     <width>280</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>AmcBranch</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:AmcBranch</string>
+   </property>
+   <property name="units" stdset="0">
+    <string/>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetAmcBranch</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="mirrAxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>200</y>
+     <width>280</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>MirrorOffset</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:GetMOffset</string>
+   </property>
+   <property name="units" stdset="0">
+    <string/>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetMOffset</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="gratAxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>240</y>
+     <width>280</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>GratingOffset</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:GetGOffset</string>
+   </property>
+   <property name="units" stdset="0">
+    <string/>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:SetGOffset</string>
+   </property>
+  </widget>
+  <widget class="QCAAxis" name="distAxis" native="true">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>330</y>
+     <width>280</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="description" stdset="0">
+    <string>SlitDist</string>
+   </property>
+   <property name="pvReadback" stdset="0">
+    <string>u411pgm1:ES_0_SlitDist</string>
+   </property>
+   <property name="units" stdset="0">
+    <string>m</string>
+   </property>
+   <property name="pv" stdset="0">
+    <string>u411pgm1:ES_0_SetSlitDist</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCAPushButton</class>
+   <extends>QPushButton</extends>
+   <header>qcapushbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCAAxis</class>
+   <extends>QWidget</extends>
+   <header>qcaaxis.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCAComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qcacombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
